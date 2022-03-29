@@ -3,37 +3,67 @@ let arbeidsomstandigheden = 0;
 let mensenrechten = 0;
 let bestuur = 0;
 
-let $total = 0;
 
+let total = 0;
+
+
+function addCategories(data) {
+    category = Object.keys(data)[0]
+    
+    if (data[category]) {
+        
+        if (category == "milieu") {
+            milieu += data[category]
+        }
+        
+        if (category == "arbeidsomstandigheden") {
+            arbeidsomstandigheden += data[category]
+        }
+        
+        if (category == "mensenrechten") {
+            mensenrechten += data[category]
+        }
+        
+        if (category == "bestuur") {
+            bestuur += data[category]   
+        }
+    }    
+}
+
+function subtractCategories(data) {
+    category = Object.keys(data)[0]
+    if (data[category]) {
+        
+        if (category == "milieu") {
+            milieu -= data[category]
+        }
+        
+        if (category == "arbeidsomstandigheden") {
+            arbeidsomstandigheden -= data[category]
+        }
+        
+        if (category == "mensenrechten") {
+            mensenrechten -= data[category]
+        }
+        
+        if (category == "bestuur") {
+            bestuur -= data[category]   
+        }
+    }    
+}
+
+//Checkbox listener
 $('input:checkbox').on('change', function() {
-    // if (this.checked){
-    //     $total += +this.value
-    //     if (this.value == 3) {
-    //         milieu += +1;
-    //     }
-    // }else{
-    //     $total -= +this.value
-    //     if (this.value == 3) {
-    //         milieu -= +1;
-    //     }
-    // }
-    console.log(this);
     let $this = $(this);
     if (this.checked){
-       
-
-        milieu += $this.data( "milieu" ).toInt();
-
-      
-    }else{
-        milieu -= $this.data( "milieu" ).toInt();
-
+        addCategories($this.data())
+    } else {
+        subtractCategories($this.data())
     }
 
-
-    
-    $('#total').html($total);
+    //temp
     $('#milieu').html(milieu);
+
 });
 
 

@@ -12130,6 +12130,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #d6d6d6;
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -12140,6 +12144,13 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+.banner {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /**
@@ -12204,4 +12215,37 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.navbar {
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.mvotest-start {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+}
+.mvotest-start h2 {
+  color: #cc0200;
+}
+
+.mvotest-btn {
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  background-color: #60b32a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.mvotest-btn:hover {
+  color: #ffffff;
 }

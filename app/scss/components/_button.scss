@@ -1,3 +1,16 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.mvotest-btn {
+  color: $white;
+  display: inline-flex;
+  align-items: center;
+  background-color: $green;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  &:hover {
+    color: $white;
+  }
+}

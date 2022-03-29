@@ -2,7 +2,7 @@ let milieu = 0;
 let arbeidsomstandigheden = 0;
 let mensenrechten = 0;
 let bestuur = 0;
-let count = 0
+let count = 1;
 
 
 
@@ -70,9 +70,25 @@ $('input:checkbox').on('change', function() {
     }
 
     //temp
-    $('#milieu').html(milieu);
-
+    // $('#milieu').html(milieu);
 });
+
+
+//next button listener
+$('#next').click(function() {
+    $('#screen' + count).hide()
+    count++
+    $('#screen' + count).show()
+});
+
+//back button listener
+$('#back').click(function() {
+    $('#screen' + count).hide()
+    count--
+    $('#screen' + count).show()
+});
+
+
 
 
 

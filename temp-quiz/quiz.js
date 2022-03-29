@@ -4,9 +4,17 @@ let mensenrechten = 0;
 let bestuur = 0;
 let count = 1;
 
-
-
 let total = 0;
+
+function backVisibility() {
+    if (count === 1) {
+        $('#back').hide()
+    } else {
+        $('#back').show()
+    }
+    
+}
+
 
 
 function addCategories(data) {
@@ -74,11 +82,18 @@ $('input:checkbox').on('change', function() {
 });
 
 
+
+
+
+
 //next button listener
 $('#next').click(function() {
     $('#screen' + count).hide()
     count++
     $('#screen' + count).show()
+
+    backVisibility()
+
 });
 
 //back button listener
@@ -86,9 +101,9 @@ $('#back').click(function() {
     $('#screen' + count).hide()
     count--
     $('#screen' + count).show()
+
+    backVisibility()
 });
-
-
 
 
 

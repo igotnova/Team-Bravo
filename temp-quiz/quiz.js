@@ -2,6 +2,8 @@ let milieu = 0;
 let arbeidsomstandigheden = 0;
 let mensenrechten = 0;
 let bestuur = 0;
+let count = 0
+
 
 
 let total = 0;
@@ -9,47 +11,53 @@ let total = 0;
 
 function addCategories(data) {
     category = Object.keys(data)[0]
+    let score = data[category]
     
     if (data[category]) {
         
         if (category == "milieu") {
-            milieu += data[category]
+            milieu += score
         }
         
         if (category == "arbeidsomstandigheden") {
-            arbeidsomstandigheden += data[category]
+            arbeidsomstandigheden += score
         }
         
         if (category == "mensenrechten") {
-            mensenrechten += data[category]
+            mensenrechten += score
         }
         
         if (category == "bestuur") {
-            bestuur += data[category]   
+            bestuur += score
         }
-    }    
+    }  
+    
+    console.log("category: " + category + ". Added score: " + score);
 }
 
 function subtractCategories(data) {
     category = Object.keys(data)[0]
+    let score = data[category]
+
     if (data[category]) {
         
         if (category == "milieu") {
-            milieu -= data[category]
+            milieu -= score
         }
         
         if (category == "arbeidsomstandigheden") {
-            arbeidsomstandigheden -= data[category]
+            arbeidsomstandigheden -= score
         }
         
         if (category == "mensenrechten") {
-            mensenrechten -= data[category]
+            mensenrechten -= score
         }
         
         if (category == "bestuur") {
-            bestuur -= data[category]   
+            bestuur -= score
         }
     }    
+    console.log("category: " + category + ". Subtracted score: " + score);
 }
 
 //Checkbox listener

@@ -10,6 +10,10 @@
     <title>quiz</title>
 </head>
 <body>
+    <div class="w3-light-grey">
+        <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
+      </div>
+      <br>
     <div class="quiz">
 
         <!-- question 1 -->
@@ -93,8 +97,8 @@
         </div>
 
         <div class="ui">
-            <button class="button back" id="back" style="display: none;">back</button>
-            <button class="button next" id="next">next</button>
+            <button class="button back" onclick="move1()" id="back" style="display: none;">back</button>
+            <button class="button next" onclick="move()" id="next">next</button>
         </div>
 
     </div>

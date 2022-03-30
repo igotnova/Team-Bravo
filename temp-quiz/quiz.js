@@ -3,7 +3,7 @@ let arbeidsomstandigheden = 0;
 let mensenrechten = 0;
 let bestuur = 0;
 let count = 1;
-
+let width = 0;
 let total = 0;
 
 function backVisibility() {
@@ -15,6 +15,22 @@ function backVisibility() {
     
 }
 
+function move() {
+    let elem = document.getElementById("myBar");
+    if (width < 100) {
+      width+=20;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+    }
+}
+function move1() {
+    let elem = document.getElementById("myBar");
+    if (width < 100) {
+      width-=20;
+      elem.style.width = width + '%';
+      elem.innerHTML = width * 1 + '%';
+    }
+}
 
 
 function addCategories(data) {

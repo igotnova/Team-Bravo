@@ -416,6 +416,20 @@ body {
   line-height: 30px;
   color: white; }
 
+.quiz {
+  padding: 4rem 0; }
+
+.quizcontainer {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden; }
+
+.screencontainer {
+  padding: 0 16px 16px 16px; }
+
+.screentitle {
+  color: #60b32a; }
+
 .mvotest-btn {
   color: #ffffff;
   display: inline-flex;

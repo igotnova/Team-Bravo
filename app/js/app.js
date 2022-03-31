@@ -33,18 +33,19 @@ let specialElementHandlers = {
 
 function uiVisibility() {
     if (count === 1) {
-        $('#back').hide()
+        $('#back').attr('style','visibility:hidden')
     } else {
-        $('#back').show()
+        $('#back').attr('style','visibility:visible')
     }
 
     $('#next').text('next')
     if (count === 5) {
-        $('#next').text('submit')
+        $('#next').text('Zie mijn resultaat')
     }
 
     if (count === 6) {
-        $('#ui').hide()
+        $('#ui').attr('style','visibility:hidden')
+        $('#back').attr('style','visibility:hidden')
         showResultScreen()
     }
 }
@@ -54,7 +55,12 @@ function moveBar() {
     if (width < 100) {
       width+=20;
       elem.style.width = width + '%';
-      elem.innerHTML = width * 1 + '%';
+      if(width == 100){
+        elem.innerHTML = 'Klaar!';
+      }
+      else{
+        elem.innerHTML = width * 1 + '%';
+      }
     }
 }
 function move1Bar() {

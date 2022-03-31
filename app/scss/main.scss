@@ -13,7 +13,6 @@
 @import "layout/header", "layout/footer", "layout/components";
 
 // 5. Page-specific styles
-@import "pages/home";
-
+@import "pages/home", "pages/quiz";
 // 6. Components
 @import "components/button", "components/responsive";

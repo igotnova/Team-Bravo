@@ -29,153 +29,174 @@
                 </a>
             </div>
         </nav>
-        <div class="w3-light-grey">
-            <div id="myBar" class="w3-container w3-green w3-center" style="width:0%">0%</div>
-        </div>
         <section class="quiz">
-            <div class="screen" id="screen1">
-                <h1 class="title">Sector</h1>
-                <h2>Vraag 1</h2>
-                <p class="question">In welke sector past uw bedrijf het beste? (kies 1)</p>
-                <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-sector="Gezondheidszorg en -welzijn"/>
-                <label for="checkbox1" class="css-label">Gezondheidszorg en -welzijn</label><br>
-    
-                <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-sector="Onderwijs, cultuur en wetenschap"/>
-                <label for="checkbox2" class="css-label">Onderwijs, cultuur en wetenschap</label><br>
-    
-    
-                <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-sector="Techniek, productie, bouw en agrarische sector" />
-                <label for="checkbox3" class="css-label">Techniek, productie, bouw en agrarische sector</label><br>
-    
-                <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-sector="veiligheid, Openbaar bestuur en onderwijs" />
-                <label for="checkbox4" class="css-label">veiligheid, Openbaar bestuur en onderwijs</label><br>
-    
-                <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-sector="Technologie, media en communicatie" />
-                <label for="checkbox4" class="css-label">Technologie, media en communicatie</label><br>
-            </div>
-    
-            <!-- question 2 -->
-            <div class="screen" id="screen2" style="display: none;">
-                <h1 class="title">Stimulering van het duurzaam omgaan met het milieu</h1>
-                <h2>Vraag 2</h2>
-                <p class="question">Welk antwoord past het best bij uw bedrijf? (kies 1)</p>
-    
-                <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-milieu="2"/>
-                <label for="checkbox1" class="css-label">Mijn bedrijf besteed niet genoeg aandacht aan het verminderen van uitstoot</label><br>
-    
-                <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-milieu="40"/>
-                <label for="checkbox2" class="css-label">Mijn bedrijf stoot weinig afval uit, maar er zijn verbeter mogelijkheden</label><br>
-    
-    
-                <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-milieu="50" />
-                <label for="checkbox3" class="css-label">Mijn bedrijf heeft gelimiteerde plannen om uitstoot tegen te gaan</label><br>
-    
-                <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-milieu="70" />
-                <label for="checkbox4" class="css-label">Mijn bedrijf houdt zich voldoende bezig met milieuvervuiling</label><br>
-    
-                <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-milieu="90" />
-                <label for="checkbox4" class="css-label">Mijn bedrijf is erg milieubewust in alle vlakken</label><br>
-            </div>
-    
-            <!-- question 3 -->
-            <div class="screen" id="screen3" style="display: none;">
-                <h1 class="title">Arbeidsomstandigheden</h1>
-                <h2>Vraag 3</h2>
-                <p class="question">Welk antwoord past het best bij uw bedrijf? (Meerde opties mogelijk)</p>
-    
-                <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-arbeidsomstandigheden="80"/>
-                <label for="checkbox1" class="css-label">Werknemers ervaren weinig druk op de werkvloer, met een gezonde omgeving en veel vrijheid</label><br>
-    
-                <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-arbeidsomstandigheden="1"/>
-                <label for="checkbox2" class="css-label">Sommige werknemers worden af en toe niet eerlijk behandeld of beloond (zoals minder betaalt krijgen dan anderen in dezelfde positie)</label><br>
-    
-    
-                <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-arbeidsomstandigheden="5" />
-                <label for="checkbox3" class="css-label">Ik weet niet precies hoe de werknemers zich voelen over de arbeidsomstandigheden</label><br>
-    
-                <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-arbeidsomstandigheden="5" />
-                <label for="checkbox4" class="css-label">Er werken (soms) kinderen onder de 16 voor ons bedrijf</label><br>
-            </div>
-    
-            <!-- question 4 -->
-            <div class="screen" id="screen4" style="display: none;">
-                <h1 class="title">Bestuur</h1>
-                <h2>Vraag 4</h2>
-                <p class="question">Welk antwoord past het best bij uw bedrijf? (Meerde opties mogelijk)</p>
-    
-                <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-bestuur="85"/>
-                <label for="checkbox1" class="css-label">De leidinggevenden dragen de leiding zelf op voorbeeldige en consistente wijze bij aan de realisatie van de doelen van de Organisatie</label><br>
-    
-                <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-bestuur="92"/>
-                <label for="checkbox2" class="css-label">Er is een diversiteit in raad van bestuur</label><br>
-    
-    
-                <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-bestuur="93" />
-                <label for="checkbox3" class="css-label">Er is een strategie voor risicobeheer</label><br>
-    
-                <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-bestuur="14" />
-                <label for="checkbox3" class="css-label">Er heerst een grote hirarchie binnen het bedrijf.</label><br>
-            </div>
-    
-            <!-- question 5 -->
-            <div class="screen" id="screen5" style="display: none;">
-                <h1 class="title">Mensenrechten</h1>
-                <h2>Vraag 5</h2>
-                <p class="question">Welk antwoord past het best bij uw bedrijf? (Meerde opties mogelijk)</p>
-    
-                <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-mensenrechten="50"/>
-                <label for="checkbox1" class="css-label">Werknemers hebben recht op collectieve onderhandeling</label><br>
-    
-                <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-mensenrechten="40"/>
-                <label for="checkbox2" class="css-label">Werknemers werken in veilige en gezonde omstandigheden </label><br>
-    
-    
-                <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-mensenrechten="8" />
-                <label for="checkbox3" class="css-label">Sommige etniciteiten worden niet gelijk behandeld</label><br>
-    
-                <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-mensenrechten="9" />
-                <label for="checkbox4" class="css-label">Werkgevers zijn soms niet transparant</label><br>
-            </div>
-    
-            <div class="ui" id="ui">
-                <button class="button back" onclick="move1Bar()" id="back" style="display: none;">back</button>
-                <button class="button next" onclick="moveBar()" id="next">next</button>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="quizcontainer">
+                            <div class="w3-light-grey">
+                                <div id="myBar" class="w3-container w3-green w3-center" style="width:0%"></div>
+                            </div>
+                            <div class="screencontainer">
+                                <div class="screen" id="screen1">
+                                    <div class="screentitle d-flex justify-content-between">
+                                        <h2 class="title">Sector</h2>
+                                        <h2>Vraag 1/5</h2>
+                                    </div>
+                                    <p class="question">In welke sector past uw bedrijf het beste? (kies 1)</p>
+                                    <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-sector="Gezondheidszorg en -welzijn"/>
+                                    <label for="checkbox1" class="css-label">Gezondheidszorg en -welzijn</label><br>
+                        
+                                    <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-sector="Onderwijs, cultuur en wetenschap"/>
+                                    <label for="checkbox2" class="css-label">Onderwijs, cultuur en wetenschap</label><br>
+                        
+                        
+                                    <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-sector="Techniek, productie, bouw en agrarische sector" />
+                                    <label for="checkbox3" class="css-label">Techniek, productie, bouw en agrarische sector</label><br>
+                        
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-sector="veiligheid, Openbaar bestuur en onderwijs" />
+                                    <label for="checkbox4" class="css-label">veiligheid, Openbaar bestuur en onderwijs</label><br>
+                        
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-sector="Technologie, media en communicatie" />
+                                    <label for="checkbox4" class="css-label">Technologie, media en communicatie</label><br>
+                                </div>
+                        
+                                <!-- question 2 -->
+                                <div class="screen" id="screen2" style="display: none;">
+                                    <div class="screentitle d-flex justify-content-between">
+                                        <h2 class="title">Stimulering van het duurzaam omgaan met het milieu</h2>
+                                        <h2>Vraag 2/5</h2>
+                                    </div>
+                                    <p class="question">Welk antwoord past het best bij uw bedrijf? (kies 1)</p>
+                        
+                                    <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-milieu="2"/>
+                                    <label for="checkbox1" class="css-label">Mijn bedrijf besteed niet genoeg aandacht aan het verminderen van uitstoot</label><br>
+                        
+                                    <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-milieu="40"/>
+                                    <label for="checkbox2" class="css-label">Mijn bedrijf stoot weinig afval uit, maar er zijn verbeter mogelijkheden</label><br>
+                        
+                        
+                                    <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-milieu="50" />
+                                    <label for="checkbox3" class="css-label">Mijn bedrijf heeft gelimiteerde plannen om uitstoot tegen te gaan</label><br>
+                        
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-milieu="70" />
+                                    <label for="checkbox4" class="css-label">Mijn bedrijf houdt zich voldoende bezig met milieuvervuiling</label><br>
+                        
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-milieu="90" />
+                                    <label for="checkbox4" class="css-label">Mijn bedrijf is erg milieubewust in alle vlakken</label><br>
+                                </div>
+                        
+                                <!-- question 3 -->
+                                <div class="screen" id="screen3" style="display: none;">
+                                    <div class="screentitle d-flex justify-content-between">
+                                        <h2 class="title">Arbeidsomstandigheden</h2>
+                                        <h2>Vraag 3/5</h2>
+                                    </div>
+                                    <p class="question">Welk antwoord past het best bij uw bedrijf? (Meerde opties mogelijk)</p>
+                        
+                                    <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-arbeidsomstandigheden="80"/>
+                                    <label for="checkbox1" class="css-label">Werknemers ervaren weinig druk op de werkvloer, met een gezonde omgeving en veel vrijheid</label><br>
+                        
+                                    <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-arbeidsomstandigheden="1"/>
+                                    <label for="checkbox2" class="css-label">Sommige werknemers worden af en toe niet eerlijk behandeld of beloond (zoals minder betaalt krijgen dan anderen in dezelfde positie)</label><br>
+                        
+                        
+                                    <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-arbeidsomstandigheden="5" />
+                                    <label for="checkbox3" class="css-label">Ik weet niet precies hoe de werknemers zich voelen over de arbeidsomstandigheden</label><br>
+                        
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-arbeidsomstandigheden="5" />
+                                    <label for="checkbox4" class="css-label">Er werken (soms) kinderen onder de 16 voor ons bedrijf</label><br>
+                                </div>
+                        
+                                <!-- question 4 -->
+                                <div class="screen" id="screen4" style="display: none;">
+                                    <div class="screentitle d-flex justify-content-between">
+                                        <h2 class="title">Bestuur</h2>
+                                        <h2>Vraag 4/5</h2>
+                                    </div>
+                                    <p class="question">Welk antwoord past het best bij uw bedrijf? (Meerde opties mogelijk)</p>
+                        
+                                    <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-bestuur="85"/>
+                                    <label for="checkbox1" class="css-label">De leidinggevenden dragen de leiding zelf op voorbeeldige en consistente wijze bij aan de realisatie van de doelen van de Organisatie</label><br>
+                        
+                                    <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-bestuur="92"/>
+                                    <label for="checkbox2" class="css-label">Er is een diversiteit in raad van bestuur</label><br>
+                        
+                        
+                                    <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-bestuur="93" />
+                                    <label for="checkbox3" class="css-label">Er is een strategie voor risicobeheer</label><br>
+                        
+                                    <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-bestuur="14" />
+                                    <label for="checkbox3" class="css-label">Er heerst een grote hirarchie binnen het bedrijf.</label><br>
+                                </div>
+                        
+                                <!-- question 5 -->
+                                <div class="screen" id="screen5" style="display: none;">
+                                    <div class="screentitle d-flex justify-content-between">
+                                        <h2 class="title">Mensenrechten</h2>
+                                        <h2>Vraag 5/5</h2>
+                                    </div>
+                                    <p class="question">Welk antwoord past het best bij uw bedrijf? (Meerde opties mogelijk)</p>
+                        
+                                    <input type="checkbox" name="checkbox1" id="checkbox1" class="css-checkbox" data-mensenrechten="50"/>
+                                    <label for="checkbox1" class="css-label">Werknemers hebben recht op collectieve onderhandeling</label><br>
+                        
+                                    <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" data-mensenrechten="40"/>
+                                    <label for="checkbox2" class="css-label">Werknemers werken in veilige en gezonde omstandigheden </label><br>
+                        
+                        
+                                    <input type="checkbox" name="checkbox3" id="checkbox3" class="css-checkbox" data-mensenrechten="8" />
+                                    <label for="checkbox3" class="css-label">Sommige etniciteiten worden niet gelijk behandeld</label><br>
+                        
+                                    <input type="checkbox" name="checkbox4" id="checkbox4" class="css-checkbox" data-mensenrechten="9" />
+                                    <label for="checkbox4" class="css-label">Werkgevers zijn soms niet transparant</label><br>
+                                </div>
 
-            <div class="screen" id="screen6" style="display: none;">
-                <div id="resultaat">
-                <h1>MVO Persoonlijk Profiel</h1>
-                <p>MVO is een veelomvattend begrip. Je kunt niet aan al deze onderwerpen tegelijk werken. Wij raden aan het onderwerp te kiezen wat de grootste impact maakt gebaseerd op uw bedrijf.</p>
-                <p id="result-text"></p>
-        
-        
-                <h3>Milieu</h3>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="milieu"></div>
-                  </div><br>
-        
-                  <h3>Arbeidsomstandigheden</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="arbeidsomstandigheden"></div>
-                  </div><br>
-        
-                  <h3>Mensenrechten</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="mensenrechten"></div>
-                  </div><br>
-        
-                  <h3>Bestuur</h3>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="bestuur"></div>
-                  </div><br>
-                    
-                <!-- image -->
-                <!-- Text over de best gescoorde categorie -->
-                <!-- score balkjes -->
-        
-                <div id="editor"></div>
-                <button id="cmd">generate PDF</button>
-             
+                                <div class="screen" id="screen6" style="display: none;">
+                                    <div id="resultaat">
+                                    <h1>MVO Persoonlijk Profiel</h1>
+                                    <p>MVO is een veelomvattend begrip. Je kunt niet aan al deze onderwerpen tegelijk werken. Wij raden aan het onderwerp te kiezen wat de grootste impact maakt gebaseerd op uw bedrijf.</p>
+                                    <p id="result-text"></p>
+                            
+                            
+                                    <h3>Milieu</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="milieu"></div>
+                                    </div><br>
+                            
+                                    <h3>Arbeidsomstandigheden</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="arbeidsomstandigheden"></div>
+                                    </div><br>
+                            
+                                    <h3>Mensenrechten</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="mensenrechten"></div>
+                                    </div><br>
+                            
+                                    <h3>Bestuur</h3>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="bestuur"></div>
+                                    </div><br>
+                                        
+                                    <!-- image -->
+                                    <!-- Text over de best gescoorde categorie -->
+                                    <!-- score balkjes -->
+                            
+                                    <div id="editor"></div>
+                                    <button id="cmd">generate PDF</button>
+                                
+                                    </div>
+                                </div>
+                        
+                                <div class="ui d-flex justify-content-between" id="ui">
+                                    <button class="button back" onclick="move1Bar()" id="back" style="visibility: hidden;">back</button>
+                                    <button class="button next" onclick="moveBar()" id="next">next</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

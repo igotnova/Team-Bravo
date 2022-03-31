@@ -2,20 +2,38 @@ let milieu = 0;
 let arbeidsomstandigheden = 0;
 let mensenrechten = 0;
 let bestuur = 0;
+
+let branche = ''
+
 let count = 1;
 let width = 0;
 let total = 0;
 
-function backVisibility() {
+const contentMilieu = 'Je kan op het '
+const contentArbeidsomstandigheden = ''
+const contentmensenrechten = ''
+const contentbestuur = ''
+
+
+function uiVisibility() {
     if (count === 1) {
         $('#back').hide()
     } else {
         $('#back').show()
     }
-    
+
+    $('#next').text('next')
+    if (count === 5) {
+        $('#next').text('submit')
+    }
+
+    if (count === 6) {
+        $('#ui').hide()
+
+    }
 }
 
-function move() {
+function moveBar() {
     let elem = document.getElementById("myBar");
     if (width < 100) {
       width+=20;
@@ -23,7 +41,7 @@ function move() {
       elem.innerHTML = width * 1 + '%';
     }
 }
-function move1() {
+function move1Bar() {
     let elem = document.getElementById("myBar");
     if (width < 100) {
       width-=20;
@@ -98,17 +116,13 @@ $('input:checkbox').on('change', function() {
 });
 
 
-
-
-
-
 //next button listener
 $('#next').click(function() {
     $('#screen' + count).hide()
     count++
     $('#screen' + count).show()
 
-    backVisibility()
+    uiVisibility()
 
 });
 
@@ -118,9 +132,15 @@ $('#back').click(function() {
     count--
     $('#screen' + count).show()
 
-    backVisibility()
+    uiVisibility()
 });
 
+if (count == 6 ) {
+    showResultScreen()
+}
 
+function showResultScreen() {
+    
+}
 
 

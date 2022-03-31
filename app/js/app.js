@@ -153,13 +153,6 @@ $('#back').click(function() {
 });
 
 function showResultScreen() {
-    let lowestScore = calculateLowestScore()
-
-    let textContent = "Jouw bedrijf valt onder de sector: " + sector + ". Je hebt het minst gescoord onder de categorie: " + lowestScore + "."
-    $('#result-text').text(textContent)
-}
-
-function calculateLowestScore() {
     let allScores = {
         milieu: milieu,
         arbeidsomstandigheden: arbeidsomstandigheden,
@@ -167,7 +160,30 @@ function calculateLowestScore() {
         bestuur: bestuur,
     }
 
+    // Calculate lowest score and update text dynamically
+    let lowestScore = calculateLowestScore(allScores)
+    let textContent = "Jouw bedrijf valt onder de sector: " + sector + ". Je hebt het minst gescoord onder de categorie: " + lowestScore + "."
+    $('#result-text').text(textContent)
+
+    // Set all the scores on each bar
+    setScoresOnResultPage(allScores)
+}
+
+function calculateLowestScore(allScores) {
+
     let lowestVal = Math.min(...Object.values(allScores))
     return Object.keys(allScores).find(key => allScores[key] === lowestVal);
-
 }
+
+function setScoresOnResultPage(allScores) {
+ 
+    for (let key in allScores) {
+        if (allScores[key] > 100) {
+            allScores[key] = 100
+        }
+
+        $('#' + key).attr('style','width: ' + allScores[key] + '%');
+        
+    }
+}
+

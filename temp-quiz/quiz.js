@@ -110,9 +110,6 @@ $('input:checkbox').on('change', function() {
     } else {
         subtractCategories($this.data())
     }
-
-    //temp
-    // $('#milieu').html(milieu);
 });
 
 

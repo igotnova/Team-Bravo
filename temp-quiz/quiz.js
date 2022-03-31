@@ -3,13 +3,15 @@ let arbeidsomstandigheden = 0;
 let mensenrechten = 0;
 let bestuur = 0;
 
-let branche = ''
+let sector = '';
 
 let count = 1;
 let width = 0;
 let total = 0;
 
-const contentMilieu = 'Je kan op het '
+let resultContent = 'Je hebt het minst gescoord op: '
+
+const contentMilieu = ' '
 const contentArbeidsomstandigheden = ''
 const contentmensenrechten = ''
 const contentbestuur = ''
@@ -29,7 +31,7 @@ function uiVisibility() {
 
     if (count === 6) {
         $('#ui').hide()
-
+        showResultScreen()
     }
 }
 
@@ -54,6 +56,10 @@ function move1Bar() {
 function addCategories(data) {
     category = Object.keys(data)[0]
     let score = data[category]
+
+    if (category == 'sector') {
+        sector = '' + score
+    }
     
     if (data[category]) {
         
@@ -132,12 +138,22 @@ $('#back').click(function() {
     uiVisibility()
 });
 
-if (count == 6 ) {
-    showResultScreen()
+function showResultScreen() {
+    let lowestScore = calculateLowestScore()
+    $('#result-text').text("Jouw bedrijf valt onder de sector: " + sector + ". Je hebt het minst gescoord onder de categorie: " + lowestScore)
 }
 
-function showResultScreen() {
-    
+function calculateLowestScore() {
+    let allScores = {
+        milieu: milieu,
+        arbeidsomstandigheden: arbeidsomstandigheden,
+        mensenrechten: mensenrechten,
+        bestuur: bestuur,
+    }
+
+    let lowestVal = Math.min(...Object.values(allScores))
+    return Object.keys(allScores).find(key => allScores[key] === lowestVal);
+
 }
 
 

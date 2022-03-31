@@ -10,11 +10,26 @@ let width = 0;
 let total = 0;
 
 
-const contentMilieu = ' '
+const contentMilieu = ''
 const contentArbeidsomstandigheden = ''
 const contentmensenrechten = ''
 const contentbestuur = ''
 
+
+let doc = new jsPDF();
+let specialElementHandlers = {
+        '#editor': function (element, renderer) {
+            return true;
+        }
+    };
+    
+    $('#cmd').click(function () {
+        doc.fromHTML($('#resultaat').html(), 15, 15, {
+            'width': 170,
+                'elementHandlers': specialElementHandlers
+        });
+        doc.save('persoonlijk-testresultaat.pdf');
+    });
 
 function uiVisibility() {
     if (count === 1) {

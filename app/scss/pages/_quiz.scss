@@ -14,9 +14,6 @@ hr {
 
 .screencontainer {
   padding: 16px;
-  p {
-    font-weight: bold;
-  }
   label {
     text-align: center;
     color: $blue;
@@ -48,6 +45,7 @@ hr {
 .results {
   h2 {
     color: $green;
+    font-weight: bold;
   }
   p {
     color: $blue;

@@ -411,7 +411,7 @@ body {
 #myBar {
   width: 10%;
   height: 30px;
-  background-color: #04aa6d;
+  background-color: #60b32a;
   text-align: center;
   line-height: 30px;
   color: white; }
@@ -429,8 +429,6 @@ hr {
 
 .screencontainer {
   padding: 16px; }
-  .screencontainer p {
-    font-weight: bold; }
   .screencontainer label {
     text-align: center;
     color: #294692; }
@@ -453,7 +451,8 @@ hr {
   color: #294692; }
 
 .results h2 {
-  color: #60b32a; }
+  color: #60b32a;
+  font-weight: bold; }
 
 .results p {
   color: #294692; }

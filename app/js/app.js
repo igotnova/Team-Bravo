@@ -44,8 +44,9 @@ function uiVisibility() {
     }
 
     if (count === 6) {
-        $('#ui').attr('style','visibility:hidden')
-        $('#back').attr('style','visibility:hidden')
+        $('#ui').attr('style','display:none')
+        $('#back').attr('style','display:none')
+        $('#next').attr('style', 'display:none')
         showResultScreen()
     }
 }
@@ -141,9 +142,9 @@ $('input:checkbox').on('change', function() {
 
 //next button listener
 $('#next').click(function() {
-    $('#screen' + count).hide()
+    $('#screen' + count).hide();
     count++
-    $('#screen' + count).show()
+    $('#screen' + count).fadeIn();
 
     uiVisibility()
 
@@ -151,9 +152,9 @@ $('#next').click(function() {
 
 //back button listener
 $('#back').click(function() {
-    $('#screen' + count).hide()
+    $('#screen' + count).hide();
     count--
-    $('#screen' + count).show()
+    $('#screen' + count).fadeIn();
 
     uiVisibility()
 });

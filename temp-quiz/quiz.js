@@ -9,7 +9,6 @@ let count = 1;
 let width = 0;
 let total = 0;
 
-let resultContent = 'Je hebt het minst gescoord op: '
 
 const contentMilieu = ' '
 const contentArbeidsomstandigheden = ''
@@ -140,7 +139,9 @@ $('#back').click(function() {
 
 function showResultScreen() {
     let lowestScore = calculateLowestScore()
-    $('#result-text').text("Jouw bedrijf valt onder de sector: " + sector + ". Je hebt het minst gescoord onder de categorie: " + lowestScore)
+
+    let textContent = "Jouw bedrijf valt onder de sector: " + sector + ". Je hebt het minst gescoord onder de categorie: " + lowestScore + "."
+    $('#result-text').text(textContent)
 }
 
 function calculateLowestScore() {

@@ -38,7 +38,7 @@ function uiVisibility() {
         $('#back').attr('style','visibility:visible')
     }
 
-    $('#next').text('next')
+    $('#next').text('Volgende')
     if (count === 5) {
         $('#next').text('Zie mijn resultaat')
     }

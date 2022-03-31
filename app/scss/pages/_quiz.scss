@@ -8,10 +8,51 @@
   overflow: hidden;
 }
 
+hr {
+  background-color: $red;
+}
+
 .screencontainer {
-  padding: 0 16px 16px 16px;
+  padding: 16px;
+  p {
+    font-weight: bold;
+  }
+  label {
+    text-align: center;
+    color: $blue;
+  }
+  .checkbox-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+  input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-bottom: 8px;
+  }
 }
 
 .screentitle {
-  color: #60b32a;
+  color: $green;
+  h2 {
+    font-weight: bold;
+  }
+}
+
+.question {
+  color: $blue;
+}
+
+.results {
+  h2 {
+    color: $green;
+  }
+  p {
+    color: $blue;
+  }
+  h3 {
+    color: $red;
+  }
 }

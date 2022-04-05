@@ -417,7 +417,11 @@ body {
   color: white; }
 
 .quiz {
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .quizcontainer {
   background-color: #ffffff;

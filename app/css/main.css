@@ -324,7 +324,7 @@ body {
   box-sizing: inherit; }
 
 .banner {
-  height: 80vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -411,7 +411,7 @@ body {
 #myBar {
   width: 10%;
   height: 30px;
-  background-color: #60b32a;
+  background-color: #25b361;
   text-align: center;
   line-height: 30px;
   color: white; }
@@ -447,7 +447,7 @@ hr {
     margin-bottom: 8px; }
 
 .screentitle {
-  color: #60b32a; }
+  color: #25b361; }
   .screentitle h2 {
     font-weight: bold; }
 
@@ -455,7 +455,7 @@ hr {
   color: #294692; }
 
 .results h2 {
-  color: #60b32a;
+  color: #25b361;
   font-weight: bold; }
 
 .results p {
@@ -468,7 +468,7 @@ hr {
   color: #ffffff;
   display: inline-flex;
   align-items: center;
-  background-color: #60b32a;
+  background-color: #25b361;
   border: none;
   padding: 8px 16px;
   border-radius: 8px;

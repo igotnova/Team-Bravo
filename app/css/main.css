@@ -397,14 +397,17 @@ body {
 .mvotest-start {
   padding: 16px;
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 16px;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75); }
   .mvotest-start h2 {
-    color: #cc0200; }
+    color: #25b361;
+    font-weight: bold; }
   .mvotest-start h3 {
     font-size: 24px;
+    color: #25b361; }
+  .mvotest-start p {
     color: #294692; }
 
 #myProgress {
@@ -429,7 +432,10 @@ body {
 .quizcontainer {
   background-color: #ffffff;
   border-radius: 16px;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75); }
 
 hr {
   background-color: #cc0200; }
@@ -478,4 +484,5 @@ hr {
   text-decoration: none; }
   .mvotest-btn:hover {
     color: #ffffff;
+    text-decoration: none;
     box-shadow: -2px 1px 5px -2px rgba(0, 0, 0, 0.75); }
